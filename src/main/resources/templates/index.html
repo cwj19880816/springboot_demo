@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <script type="text/javascript" src="/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
 </head>
 <body>
 <div id="div_main">
-    <div id="div_top">欢迎进入本系统！<div id="div_top_user"><span  th:text="${session.username}"></span></div></div>
+    <div id="div_top">欢迎进入本系统！
+        <div id="div_top_user"><div id="div_top_user_msg"><span id="span_username" th:text="${session.username}"></span>&nbsp;&nbsp;&nbsp;&nbsp;<b
+                class="triangle"></b></div>
+            <ul class="person_option">
+                <!-- 该div用来显示尖角 -->
+                <div id="div_arrow"></div>
+                <li>个人信息</li>
+                <li>退出</li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+    </div>
     <div id="div_middle"></div>
     <div id="div_bottom"></div>
 </div>
