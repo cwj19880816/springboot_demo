@@ -18,11 +18,14 @@
 <body>
 <div id="div_main">
     <div id="div_top">欢迎进入本系统！
-        <div id="div_top_user"><div id="div_top_user_msg"><span id="span_username" th:text="${session.username}"></span>&nbsp;&nbsp;<b
-                class="triangle"></b></div>
+        <div id="div_top_user">
+            <div id="div_top_user_msg"><span id="span_username" th:text="${session.username}"></span>&nbsp;&nbsp;
+                <b class="triangle"></b>
+            </div>
             <ul class="person_option">
                 <!-- 该div用来显示尖角 -->
                 <div id="div_arrow"></div>
+                <div id="div_shelter"></div>
                 <li>个人信息</li>
                 <li>退出</li>
             </ul>

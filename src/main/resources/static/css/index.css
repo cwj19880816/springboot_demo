@@ -30,12 +30,12 @@
     padding: 0px;
     text-align: center;
     position: relative;
-    right: 4px;
-    top: 30px;
+    right: -1px;
+    top: 5px;
 }
 
-.person_option div {
-    background-color: white;
+.person_option #div_arrow {
+    background-color: transparent;
     width: 6px;
     height: 6px;
     border: lightgray solid 1px;
@@ -45,6 +45,16 @@
     left: 35px;
     top: -5px;
     transform: rotate(45deg);
+}
+
+.person_option #div_shelter{
+    background-color: transparent;
+    border-top: white solid 1px;
+    width: 9px;
+    height: 0px;
+    position: absolute;
+    left: 34px;
+    top: -1px;
 }
 
 .person_option li {
