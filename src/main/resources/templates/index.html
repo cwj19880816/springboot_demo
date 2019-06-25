@@ -6,11 +6,19 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
     <script type="text/javascript" src="/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    <style type="text/css">
+        .divwhite{
+            background-color: white!important;
+        }
+        .divblue{
+            background-color: lightskyblue!important;
+        }
+    </style>
 </head>
 <body>
 <div id="div_main">
     <div id="div_top">欢迎进入本系统！
-        <div id="div_top_user"><div id="div_top_user_msg"><span id="span_username" th:text="${session.username}"></span>&nbsp;&nbsp;&nbsp;&nbsp;<b
+        <div id="div_top_user"><div id="div_top_user_msg"><span id="span_username" th:text="${session.username}"></span>&nbsp;&nbsp;<b
                 class="triangle"></b></div>
             <ul class="person_option">
                 <!-- 该div用来显示尖角 -->
