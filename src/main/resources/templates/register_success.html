@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+    <!-- thymeleaf的内联th:inline（在javascript访问model中的数据） -->
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+        var loginhref = /*[[@{/commonForward(location='index')}]]*/"";
+        /*]]>*/
+        setTimeout("location.href=loginhref", 3000);
+    </script>
+</head>
+<body>
+注册成功！3秒后将自动跳转至主页！<br/>
+<a th:href="@{/commonForward(location='index')}">点击此处直接进入主页</a>
+</body>
+</html>

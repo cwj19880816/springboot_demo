@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/>
+</head>
+<body>
+<div id="div_login">
+    <form action="#" th:action="@{/user/login}" method="post" name="loginForm" id="form_login">
+        <table border="0" width="350px">
+            <tr>
+                <td align="right" width="100px">用户名：</td>
+                <td><input type="text" name="username" id="txt_username" placeholder="请输入用户名" size="20" required/><br/><span th:text="${loginerrormsg}" style="color: red;font-size: 12px"></span></td>
+            </tr>
+            <tr>
+                <td align="right" width="100px">密码：</td>
+                <td><input type="password" name="password" id="pwd_password" placeholder="请输入密码" size="20" required/>&nbsp;<a
+                        id="loc_pwdupd" class="msg_prompt" th:href="@{/commonForward(location='password_update')}">忘记密码</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="middle"><input type="submit" value="登录" id="sub_login"/>&nbsp;<a
+                        id="loc_register" class="msg_prompt" th:href="@{/commonForward(location='register')}">注册</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

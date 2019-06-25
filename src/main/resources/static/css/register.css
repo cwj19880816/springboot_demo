@@ -1,0 +1,17 @@
+#div_register{
+    width: 480px;
+    margin: 0px auto;
+}
+.msg_prompt{
+    display: none;
+    border: yellow solid 1px;
+    background-color: yellowgreen;
+    padding: 0px;
+    width: 180px;
+    font-size: 12px;
+}
+.msg_prompt ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
