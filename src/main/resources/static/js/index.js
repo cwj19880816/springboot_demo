@@ -15,6 +15,6 @@ $(document).ready(function () {
         /*<![CDATA[*/
         var userhref = /*[[@{/commonForward(location='userinfo')}]]*/"";
         /*]]>*/
-        location.href = userhref;
+        location.href="/commonForward?location=userinfo";
     });
 });
