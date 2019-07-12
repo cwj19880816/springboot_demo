@@ -11,6 +11,7 @@ $(document).ready(function () {
         $(this).removeClass("divblue").addClass("divwhite");
     });
     $("#li_personinfo").click(function () {
+        alert(1);
         /*<![CDATA[*/
         var userhref = /*[[@{/commonForward(location='userinfo')}]]*/"";
         /*]]>*/
