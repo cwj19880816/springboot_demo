@@ -10,11 +10,9 @@ $(document).ready(function () {
     }, function () {
         $(this).removeClass("divblue").addClass("divwhite");
     });
-    $("#li_personinfo").click(function () {
-        alert(1);
-        /*<![CDATA[*/
-        var userhref = /*[[@{/commonForward(location='userinfo')}]]*/"";
-        /*]]>*/
-        location.href="/commonForward?location=userinfo";
-    });
+
 });
+
+function clickforward(href) {
+    window.location.href = "/commonForward?location="+href;
+}
